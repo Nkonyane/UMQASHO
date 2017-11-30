@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "769038040367",
+    "firebase_url": "https://umqasho.firebaseio.com",
+    "project_id": "umqasho",
+    "storage_bucket": "umqasho.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769038040367:android:addded8792d86dec",
+        "android_client_info": {
+          "package_name": "com.example.wendy.umqasho"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "769038040367-oeqitmnei28p680eu5calj6m1jmr1duv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wendy.umqasho",
+            "certificate_hash": "7fd46dbae05769c5924f3d31a9ae20e926c68aa1"
+          }
+        },
+        {
+          "client_id": "769038040367-t2uakta0muqnihqobjjkeee58q1o8oc6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvOmDaQiTAyFs8Vsfczv9UCl0b9kanMuo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "769038040367-t2uakta0muqnihqobjjkeee58q1o8oc6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAEBD7"
+
+    tools:context="com.example.wendy.umqasho.Landlord">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#F4A460"
+        android:textStyle="bold"
+        android:id="@+id/textview"
+        android:text="LANDLORD USE"/>
+
+    <ImageView
+        android:layout_height="200dp"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="20dp"
+        android:id="@+id/ShowImageView"
+        android:layout_below="@+id/textview"/>
+    <Button
+        android:textColor="#F4A460"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="20dp"
+        android:id="@+id/ButtonChooseImage"
+        android:text="Choose Image"
+        android:layout_below="@+id/ShowImageView"/>
+
+    <EditText
+
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:id="@+id/ImageNameEditText"
+        android:textColor="#F4A460"
+        android:layout_below="@+id/ButtonChooseImage"
+        android:hint="Enter Image Name Here"/>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="20dp"
+        android:id="@+id/ButtonUploadImage"
+        android:text="Upload image to Firebase Storage"
+        android:layout_below="@+id/ButtonChooseImage"
+        android:textColor="#F4A460"/>
+
+</RelativeLayout>

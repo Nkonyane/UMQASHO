@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAEBD7">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="13dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/logoo"
+        android:scaleType="fitCenter"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/logo">
+
+        <EditText
+            android:id="@+id/editFName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="First Name(s)"
+            style="@android:style/Theme.NoTitleBar"
+            android:layout_marginRight="10dp"/>
+        <EditText
+            android:id="@+id/editSurname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@android:style/Theme.NoTitleBar"
+            android:hint="Surname"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/linear1">
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@android:style/Theme.NoTitleBar"
+            android:hint="Email"
+            android:layout_marginRight="10dp"
+            android:inputType="textEmailAddress"/>
+        <EditText
+            android:id="@+id/editPass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@android:style/Theme.NoTitleBar"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/linear2">
+
+        <EditText
+            android:id="@+id/DOB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@android:style/Theme.NoTitleBar"
+            android:hint="Date of Birth"
+            android:inputType="date"/>
+
+
+        <RadioGroup
+            android:id="@+id/grpGender"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear3"
+            android:layout_margin="10dp">
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/radMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Male"
+                android:textColor="#F4A460"/>
+
+            <RadioButton
+                android:id="@+id/radFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textColor="#F4A460"/>
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/membership"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/register"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp">
+
+        <RadioGroup
+            android:id="@+id/grpType"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear3"
+            android:layout_margin="10dp">
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/radMember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="landlord"
+                android:textColor="#F4A460"/>
+            <RadioButton
+                android:id="@+id/radAdmin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#F4A460"
+                android:text="Tenant" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:background="#F4A460"
+        android:textColor="#FAEBD7"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+
+
+
+</RelativeLayout>
